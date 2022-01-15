@@ -110,24 +110,85 @@ h3{
     color: var(--secundario);
 }
 
+/* Grid */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* column-gap: 2rem; */
+    /* row-gap: 2rem; */
+    gap: 2rem; /* Misma acción de las dos líneas de arriba, en una*/
+}
+@media (min-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(3,1fr); 
+    }
+}
+
 /* Prodcutos */
 
 .producto{
-
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
 }
 
 .producto__imagen{
-
-}
-
-.producto__informacion{
-
+    width: 100%;
 }
 
 .producto__nombre{
+    font-size: 3rem;
+    padding: .5rem;
+}
 
+@media (min-width: 768px) {
+    .producto__nombre{
+        font-size: 4rem;
+    }
 }
 
 .producto__precio{
-    
+    font-size: 2rem;
+    color: var(--secundario);
+    padding: .5rem;
+}
+
+@media (min-width: 768px) {
+    .producto__precio{
+        font-size: 2.8rem;
+        color: var(--secundario);
+    }
+}
+
+.producto__nombre,
+.producto__precio{
+    font-family: var(--fuentePrincipal);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+/* Gráficos */
+
+.grafico{
+    min-height: 30rem;
+    background-repeat: none;
+    background-size: cover;
+    grid-column: 1 / 3; /*Column: se extiende izquierda a derecha*/
+}
+
+.grafico--camisas{
+    grid-row: 2 / 3;  /*Row: son los números de arriba hacia abajo*/
+    background-image: url(../img/grafico1.jpg);
+}
+.grafico--node{
+    background-image: url(../img/grafico2.jpg);
+    grid-row: 8 / 9;
+}
+
+@media (min-width: 768px) {
+    .grafico--node{
+        grid-row: 5 / 6;  /*Row: son los números de arriba hacia abajo*/
+        grid-column: 2 / 4; /*Column: se extiende izquierda a derecha*/
+    }
 }
