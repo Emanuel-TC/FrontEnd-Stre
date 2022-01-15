@@ -73,23 +73,61 @@ h3{
     margin: 3rem 0; /*Primer valor es arriba y abajo, y segundo valor, derecha e izquierda*/
 }
 
+/* Footer */
+.footer{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0; /*Primer valor es arriba y abajo, y segundo valor, derecha e izquierda*/
+    margin-top: 2rem;
+}
+
+.footer__texto{
+    font-family: var(--fuentePrincipal);
+    font-size: 2.2rem;
+    text-align: center;
+}
+
 /* Navegación */
 .navegacion{
     background-color: var(--primarioOscuro);
     padding: 1rem 0; /*Primer valor es arriba y abajo, y segundo valor, derecha e izquierda*/
     display: flex;
     justify-content: center;
-    gap: 2rem; /*Gap (forma ya parte de flex-box) se usa para separar elementos*/
+    /*gap: 2rem; /* Gap (forma ya parte de flex-box) se usa para separar elementos*/
 }
 
 .navegacion__enlace{
     font-family: var(--fuentePrincipal);
     color: var(--blanco);
     font-size: 3rem;
-    /* margin-right: 2rem; //Forma anterior para el Gap de arriba en .navegacion     */
+    margin-right: 2rem; /* Forma anterior para el Gap de arriba en .navegacion     */
+}
+
+.navegacion__enlace:last-of-type{
+    margin-right: 0;
 }
 .navegacion__enlace--activo,
 .navegacion__enlace:hover{
     color: var(--secundario);
 }
-  
+
+/* Prodcutos */
+
+.producto{
+
+}
+
+.producto__imagen{
+
+}
+
+.producto__informacion{
+
+}
+
+.producto__nombre{
+
+}
+
+.producto__precio{
+    
+}
