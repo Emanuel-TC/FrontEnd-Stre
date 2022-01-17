@@ -1,2 +1,2 @@
 # FrontEnd-Stre
-En cuanto termine el proyecto, subo el enlace ja, ja
+/*****/  https://frontend-store-by-emanuel.netlify.app/index.html /*****/
