@@ -36,7 +36,7 @@ a{
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .contenedor{
@@ -132,9 +132,9 @@ h3{
     padding: 1rem;
 }
 
-.producto__imagen{
+/* .producto__imagen{
     width: 100%;
-}
+} */
 
 .producto__nombre{
     font-size: 3rem;
@@ -193,7 +193,7 @@ h3{
     }
 }
 
-/* Nosotros */
+                                    /*Página Nosotros */
 
 .nosotros{
     display: grid;
@@ -214,7 +214,7 @@ h3{
 
 .nosotros__imagen{
     grid-row: 1 / 2;
-    width: 100%;
+    /* width: 100%; */
 }
 
 @media (min-width: 768px) {
@@ -241,10 +241,63 @@ h3{
     text-align: center;
 }
 
-.bloque__imagen{
+/* .bloque__imagen{
     width: 100%;
-}
+} */
 
 .bloque__titulo{
     margin: 0;
+}
+                                /*  Página de producto   */
+.camisa{
+    padding: 2rem; /* Para que todo el contenido se despegue un poco en la vista móvil */
+}
+
+@media (min-width: 768px) {
+    .camisa{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 2rem;
+    }
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    
+}
+
+.formulario__campo{
+    /* border-color: var(--primarioOscuro);
+    border-width: 1rem;
+    border-style: solid; */
+    border: 1rem solid var(--primarioOscuro); /*Ancho Tipo Color */
+    /* background-color: transparent; */
+    background-color:rgb(187,183,188);
+    color: var(--blanco);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .formulario__campo { 
+      max-width: 100%;
+    }
+}
+
+.formulario__submit{
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+    transition: background-color .3s ease;
+    grid-column: 1 / 3;
+}
+
+.formulario__submit:hover{
+    cursor: pointer;
+    background-color: var(--secundarioOscuro);
 }
